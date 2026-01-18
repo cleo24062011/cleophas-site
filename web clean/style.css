@@ -1,0 +1,53 @@
+/* Toujours utile */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #222;
+}
+
+.header h1 {
+  color: aqua;
+}
+
+/* Contenu */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.content img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Lien */
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 30px;
+  }
+}

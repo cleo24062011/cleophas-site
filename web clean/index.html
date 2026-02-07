@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cléophas – Développeur Web</title>
+  <title>LingoSprint – Mini app style Duolingo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="app">
+    <section class="top-bar card">
+      <div class="xp">⭐ 120 XP</div>
+      <div class="streak">🔥 Série : <span id="streak">0</span></div>
+      <div class="hearts" id="hearts">❤️❤️❤️</div>
+    </section>
 
-<header class="header">
-  <h1>Cléophas</h1>
-</header>
+    <section class="lesson card">
+      <h1>Leçon : Français → Anglais</h1>
+      <p class="instruction">Traduis ce mot :</p>
+      <p class="question" id="question">chat</p>
 
-<main class="content">
-  <p>Je débute le développement web et j’apprends HTML, CSS et bientôt JavaScript.</p>
+      <div class="choices" id="choices"></div>
 
-  <img src="jet-5757525_640_waifu2x_photo_noise1_scale.jpg" alt="Image avion">
+      <p class="feedback" id="feedback" aria-live="polite"></p>
 
-  <a href="https://lp-magicmakers.fr/" target="_blank">Découvrir Magic Makers</a>
-</main>
+      <div class="actions">
+        <button id="validateBtn" disabled>Valider</button>
+        <button id="nextBtn" disabled>Suivant</button>
+      </div>
+    </section>
 
+    <section class="progress card">
+      <h2>Progression</h2>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <p id="progressText">0 / 5 bonnes réponses</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
